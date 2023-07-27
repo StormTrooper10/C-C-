@@ -1,65 +1,33 @@
 
-/*#include "Facebook.h"
-
+#include "Diablo.h"
 #include <iostream>
-#include<cstring>
 using namespace std;
 
 int main() {
-char name[6];
-char email[10];
-	char gender;
-	char array[11];
-	//string name, email;
-	cout<<"Enter your name\n";
-	for(int i=0; i<6; i++)
-	{
-	cin>>name[i];
 
-	}
-	cout<<"Enter your email\n";
-	for(int i=0; i<10; i++)
-		{
-		cin>>email[i];
+	Diablo obj1, obj2;
 
-		}
+	obj1.set_color("Rose Gold & Black");
+	obj1.set_cubic_capacity(8655);
+	obj1.set_seats(4);
+	obj1.set_owner_name("Sanna");
+	obj1.set_manufacture_year(2007);
+	obj1.set_frame_number("88672");
+	obj1.set_engine_number("UH765");
 
-	cout<<"Enter your gender\n";
-	cin>>gender;
-	cout<<"Enter your contact number\n";
-	for(int i=0; i<11; i++)
-	{
-		cin>>array[i];
+	obj2=obj1;
 
-	}
+	obj2.set_owner_name("Umar");
+	obj2.set_manufacture_year(9832);
+	obj2.set_frame_number("89UH");
+	obj2.set_engine_number("88HUH");
 
+	cout<<obj2.get_color()<<endl;
 
-	Facebook f(name, email, gender);
-	f.setname(name);
-	f.setemail(email);
-	f.setgender(gender);
-	f.getname()<<endl;
-	f.getemail()<<endl;
-	cout<<f.getgender()<<endl;
-	f.updatenumber(array);
-	f.checkcompany();
+	obj2.set_color("Black");
 
-
-
-
-
+	cout<<obj2.get_color()<<endl;
+	cout<<obj1.get_color()<<endl;
 
 	return 0;
-}*/
-
-#include "FaceBook.h"
-
-#include<iostream>
-//#include<string>
-using namespace std;
-int main (){
-FaceBook f("Umar","gulomer10@ymail,com","M");
-
 }
-
-
